@@ -1,16 +1,40 @@
 {
-  "pages":[
-    "pages/my/my",
-    "pages/post/post",
-    "pages/post/post-detail/post-detail",
-   
-    "pages/index/index"
-  
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+        "pages": [
+                "pages/index/index",
+                "pages/post/post",
+                "pages/my/my",
+                "pages/post/post-detail/post-detail"
+        ],
+        "window": {
+                "backgroundTextStyle": "light",
+                "navigationBarBackgroundColor": "#ff2400",
+                "navigationBarTitleText": "行走的水果",
+                "navigationBarTextStyle": "black",
+                "enablePullDownRefresh": false
+        },
+        "tabBar": {
+                "color": "#666",
+                "selectedColor": "#f20303",
+                "borderStyle": "white",
+                "list": [
+                        {
+                                "pagePath": "pages/index/index",
+                                "text": "首页",
+                                "iconPath": "tab-images/book.png",
+                                "selectedIconPath": "tab-images/book@highlight.png"
+                        },
+                        {
+                                "pagePath": "pages/post/post",
+                                "text": "分类",
+                                "iconPath": "tab-images/classic.png",
+                                "selectedIconPath": "tab-images/classic@highlight.png"
+                        },
+                        {
+                                "pagePath": "pages/my/my",
+                                "text": "我的",
+                                "iconPath": "tab-images/my.png",
+                                "selectedIconPath": "tab-images/my@highlight.png"
+                        }
+                ]
+        }
 }
