@@ -1,0 +1,54 @@
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.head-image{
+  width: 100%;
+  height: 460rpx;
+}
+.date{
+  margin-left: 40rpx;
+  margin-top: 40rpx;
+  vertical-align: middle;
+  color: #999;
+}
+.title{
+  margin-left: 40rpx;
+  font-size: 36rpx;
+  font-weight: 700;
+  margin-top: 30rpx;
+  letter-spacing: 2px;
+  color: #4b556c;
+}
+.tool{
+  margin-top: 20rpx;
+}
+.circle-img{
+  float: right;
+  margin-right: 40rpx;
+  vertical-align: middle;
+}
+.circle-img Image{
+  width: 90rpx;
+  height: 90rpx;
+}
+.share-img{
+  margin-left: 30rpx;
+}
+.horizon{
+  width: 660rpx;
+  height: 1px;
+  background-color: #e5e5e5;
+  vertical-align: middle;
+  position: relative;
+  top: 46rpx;
+  margin: 0 auto;
+  z-index: -99;
+}
+.detail{
+  color: #666;
+  margin: 10rpx;
+  line-height: 45rpx;
+  letter-spacing: 1px;
+  font-size: 28rpx;
+}
