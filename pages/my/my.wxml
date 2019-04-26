@@ -1,16 +1,7 @@
 <!--pages/my/my.wxml-->
 <view class="my_container">
-<view class="my_box"></view>
-<view class="menu_box">
-<!--navigation-->
-  <view class="grids">
-    <block wx:for="{{gridList}}" wx:for-item="gridItem" wx:for-index="gridIndex" wx:key="grid">
-      <view class="grid" bindtap="viewGridDetail" data-url="{{gridItem.enName}}">
-        <view class="grid-icon grid-icon-{{gridItem.enName}}"></view>
-        <view class="grid-title">{{gridItem.zhName}}</view>
-      </view>
-    </block>
+  <view class="my_box"></view>
+  <view class="menu_box">
+    
   </view>
-</view>
- 
 </view>
