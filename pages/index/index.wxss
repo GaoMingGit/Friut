@@ -1,1 +1,154 @@
-/* pages/index/index.wxss */
+.swiperClass {
+        width: 100%;
+        height: 200px;
+        margin-top: 5px;
+}
+
+.slide-image {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        position: relative;
+}
+
+image.active {
+        transform: none;
+        transition: all 0.2s ease 0s;
+}
+
+image.quiet {
+        transform: scale(0.8);
+        transition: all 0.2s ease-in 0s;
+}
+
+.notice {
+        margin-top: 16rpx;
+        display: flex;
+        flex-direction: column;
+        width: 700rpx;
+        height: 400rpx;
+        border: solid 1px #fff;
+        border-radius: 10px;
+        box-shadow: 1px 1px 20px 10px #fee6e6;
+}
+
+.notice-header {
+        display: flex;
+        flex-direction: row;
+}
+
+.notice-header-img {
+        height: 100rpx;
+        width: 100rpx;
+}
+
+.notice-title {
+        flex-direction: row;
+        position: relative;
+        margin-top: 30rpx;
+        color: #ff7200;
+}
+
+.notice-content {
+        position: relative;
+        margin-top: 50rpx;
+        /* margin-right: 5rpx; */
+        font-size: 30rpx;
+        /* font-weight: ; *//* text-decoration:underline; */
+        text-indent: 2rem;
+        color: #ff7200;
+        letter-spacing: 4pt;
+}
+
+.notice-bottom-img {
+        height: 150rpx;
+        width: 100rpx;
+        position: relative;
+        margin-left: 600rpx;
+        margin-top: 10px;
+}
+.recommend{
+        margin-top: 45rpx;
+        width:700rpx;
+        height:300rpx;
+        background-color: pink;
+        border-radius: 35rpx/35rpx;
+}
+.detail-bottom-box {
+        width: 700rpx;
+        height: 500rpx;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-top: 40rpx;
+}
+
+
+
+.tab-box {
+        width: 500rpx;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border: 10rpx solid papayawhip;
+        border-radius: 35rpx/35rpx;
+}
+
+.tab-item {
+        /* width:30%; */
+        height:65rpx;
+        color: rgba(171, 149, 109, 0.8);
+        font-size: 40rpx;
+        /* align-items: center;
+        justify-content: center; */
+        position: relative;
+        margin-top: 15rpx;
+}
+.tab-item.active {
+        margin-bottom: 18rpx;
+        color: red;
+        border-bottom: 2px solid rgba(171, 149, 109, 0.8);
+        /* 点击后tab-item属性的变化  */
+}
+
+.product-detail-box {
+        /* border-radius: 30rpx/30rpx; */
+        /* width: 700rpx;
+        height: 600rpx; */
+        position: absolute;
+        margin-top: 140rpx;
+        /* width: 700rpx;
+        height: 500rpx; */
+        /* border: 2px soild #ff7200; */
+         /* background-color: black; */
+}
+.detail-box1 {
+        border-radius: 30rpx/30rpx;
+        width: 700rpx;
+        height: 600rpx;
+        background-color:pink;
+}
+
+.detail-box2 {
+        border-radius: 30rpx/30rpx;
+        width: 700rpx;
+        height: 600rpx;
+        background-color: #ff7200;
+}
+
+.poster{
+        position: relative;
+        margin-top: 260rpx;
+        width:700rpx;
+        height:200rpx;
+        background-color: pink;
+         border-radius: 30rpx/30rpx;
+}
+.text{
+        font-size: 28rpx;
+        color:black;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 40rpx;
+}
