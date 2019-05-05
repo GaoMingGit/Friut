@@ -1,6 +1,9 @@
 <!--pages/my/my.wxml-->
 <view class="my_container">
-  <view class="my_box"></view>
+  <view class="my_box">
+  <open-data type="UserInfo"></open-data>
+  <open-data type="userNickName"></open-data>
+  </view>
   <view class="menu_box">
     
   </view>

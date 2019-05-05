@@ -2,36 +2,31 @@
 <import src="post-item/post-item-template.wxml" />
 
 <view class="map_container">
- <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="10" show-location="true" markers="{{markers}}" bindmarkertap="makertap" ></map>
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="10" show-location="true" markers="{{markers}}" bindmarkertap="makertap"></map>
 </view>
 
 <view class="swiper-tab">
- <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">水果简介</view>
- <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">果农故事</view>
- <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">产业文化</view>
-</view>
+  <view class="swiper-tab-list {{currentTab==index ? 'on' : ''}}"  wx:for="{{tabName}}" wx:key="" data-current="{{index}}" bindtap="swichNav">{{item}}</view>
+  </view>
 <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
- <swiper-item>
-  <view>水果简介</view>
- </swiper-item>
- <swiper-item>
-  <view>果农故事</view>
- </swiper-item>
- <swiper-item>
-  <view>产业文化</view>
- </swiper-item>
+  <swiper-item>
+    <view>111</view>
+  </swiper-item>
+  <swiper-item>
+    <view>222</view>
+  </swiper-item>
+  <swiper-item>
+    <view>33</view>
+  </swiper-item>
 </swiper>
 
+
 <!--news grow-->
-  <view class="news-grp flex">
-    <block wx:for="{{posts_key}}" wx:for-item="item" wx:key="unique">
+<view class="news-grp flex">
+  <block wx:for="{{posts_key}}" wx:for-item="item" wx:key="unique">
     <!--//template-->
     <view catchtap="onPostTap" data-postId="{{item.postId}}">
       <template is="postItem" data="{{...item}}" />
     </view>
-    
   </block>
-
-  </view>
-  
-
+</view>

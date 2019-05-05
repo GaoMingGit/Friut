@@ -1,4 +1,5 @@
 {
+
         "pages": [
                 "pages/index/index",
                 "pages/post/post",
@@ -38,3 +39,4 @@
                 ]
         }
 }
+

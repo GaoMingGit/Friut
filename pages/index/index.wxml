@@ -1,43 +1,42 @@
 <view class="container">
-        <swiper class="swiperClass" indicator-active-color='#f49641' indicator-dots='true' indicator-color='true' autoplay='true' interval='3000' duration='1000' previous-margin='30rpx' next-margin='30rpx' circular='true' bindchange='bindchange' style='height:{{swiperHeight}}px'>
-                <block wx:for="{{imgUrls}}" wx:key="{{index}}">
-                        <navigator url='{{item.url}}'>
-                                <swiper-item>
-                                        <image src="{{item.imgsrc}}" class="slide-image {{swiperIndex == index ? 'active' : 'quiet'}}" mode='aspectFill'>
-                                        </image>
-                                </swiper-item>
-                        </navigator>
-                </block>
-        </swiper>
-        <view class="notice">
-                <view class="notice-header">
-                        <image class="notice-header-img" src="images/notice-header-img.png"></image>
-                        <view class="notice-title">
-                                亲爱的
-                                <open-data type="userNickName" lang="zh_CN"></open-data>您好:
-                                <!--获取用户昵称-->
-                        </view>
-                </view>
-                <view class="notice-content">{{content}}</view>
-                <image class="notice-bottom-img" src="images/notice-bottom-img.png"></image>
-        </view>
-        <!-- 推荐栏 -->
-        <view class="recommend">推荐栏</view>
-        <!-- 分类tab栏切换 -->
-        <view class="detail-bottom-box">
-                <view class="tab-box">
-                        <block wx:for="{{['美味鲜果','今日推荐']}}" wx:key="id">
-                                <view class="tab-item {{currentTabsIndex == index?'active':''}}" bindtap='onTabsItemTap' data-index="{{index}}">{{item}}</view>
-                        </block>
-                </view>
-                <view class="product-detail-box">
-                        <view  class="detail-box1" hidden='{{currentTabsIndex!==0}}'>fefef</view>
-                        <view class="detail-box2" hidden='{{currentTabsIndex!==1}}'>htfjh</view>
-                </view>
-        </view>
-        <!-- 底部栏 -->
-        <view class="poster">广告栏</view>
-         <!-- 底部提示 -->
-        <text class="text">---我是一个有底线的小程序---</text>
+  <swiper class="swiperClass" indicator-active-color='#f49641' indicator-dots='true' indicator-color='true' autoplay='true' interval='3000' duration='1000' previous-margin='30rpx' next-margin='30rpx' circular='true' bindchange='bindchange' style='height:{{swiperHeight}}px'>
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <navigator url='{{item.url}}'>
+        <swiper-item>
+          <image src="{{item.imgsrc}}" class="slide-image {{swiperIndex == index ? 'active' : 'quiet'}}" mode='aspectFill'>
+          </image>
+        </swiper-item>
+      </navigator>
+    </block>
+  </swiper>
+  <view class="notice">
+    <view class="notice-header">
+      <image class="notice-header-img" src="images/notice-header-img.png"></image>
+      <view class="notice-title">
+        亲爱的
+        <open-data type="userNickName" lang="zh_CN"></open-data>您好:
+        <!--获取用户昵称-->
+      </view>
+    </view>
+    <view class="notice-content">{{content}}</view>
+    <image class="notice-bottom-img" src="images/notice-bottom-img.png"></image>
+  </view>
+  <!-- 推荐栏 -->
+  <view class="recommend">推荐栏</view>
+  <!-- 分类tab栏切换 -->
+  <view class="detail-bottom-box">
+    <view class="tab-box">
+      <block wx:for="{{['美味鲜果','今日推荐']}}" wx:key="id">
+        <view class="tab-item {{currentTabsIndex == index?'active':''}}" bindtap='onTabsItemTap' data-index="{{index}}">{{item}}</view>
+      </block>
+    </view>
+    <view class="product-detail-box">
+      <view class="detail-box1" hidden='{{currentTabsIndex!==0}}'>fefef</view>
+      <view class="detail-box2" hidden='{{currentTabsIndex!==1}}'>htfjh</view>
+    </view>
+  </view>
+  <!-- 底部栏 -->
+  <view class="poster">广告栏</view>
+  <!-- 底部提示 -->
+  <text class="text">---我是一个有底线的小程序---</text>
 </view>
- 

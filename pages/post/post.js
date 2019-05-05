@@ -3,6 +3,12 @@ var amapFile = require("../../libs/amap-wx.js");
 var postsData = require('../../data/posts-data.js')
 Page({
   data: {
+    currentTab:0,
+    tabName:[
+      '水果简介',
+      '果农故事',
+      '产业文化'
+    ],
     markers: [],
     latitude: '21.67',
     longitude: '110.92',
